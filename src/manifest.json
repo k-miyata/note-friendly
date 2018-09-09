@@ -3,5 +3,19 @@
   "name": "__MSG_ext_name__",
   "version": "1.0.0",
   "description": "__MSG_ext_description__",
-  "default_locale": "en"
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://note.mu/*/n/*",
+        "https://*/n/*"
+      ],
+      "css": [
+        "main.css"
+      ],
+      "js": [
+        "main.js"
+      ]
+    }
+  ]
 }
