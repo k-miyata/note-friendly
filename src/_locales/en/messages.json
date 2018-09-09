@@ -1,0 +1,10 @@
+{
+  "ext_name": {
+    "message": "Background Color Enhancer for note.mu",
+    "description": "The extension name."
+  },
+  "ext_description": {
+    "message": "Enhances the background color that is good for eyes on an article page of note.mu.",
+    "description": "Description of the extention."
+  }
+}

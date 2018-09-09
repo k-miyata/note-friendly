@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_ext_name__",
+  "description": "__MSG_ext_description__",
+  "version": "1.0.0",
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://note.mu/*/n/*",
+        "https://*/n/*"
+      ],
+      "css": [
+        "main.css"
+      ],
+      "js": [
+        "main.js"
+      ]
+    }
+  ]
+}
