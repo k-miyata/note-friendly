@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "__MSG_ext_name__",
   "description": "__MSG_ext_description__",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icons": {
     "128": "icon_128.png"
   },
@@ -10,8 +10,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://note.mu/*/n/*",
-        "https://*/n/*"
+        "https://*/*"
       ],
       "css": [
         "main.css"
