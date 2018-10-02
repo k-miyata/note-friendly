@@ -10,8 +10,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://note.mu/*/n/*",
-        "https://*/n/*"
+        "https://*/*"
       ],
       "css": [
         "main.css"
