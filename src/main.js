@@ -8,6 +8,7 @@ const notemuChromeext = {
 
 document.body.addEventListener('transitionend', () => {
   const path = location.pathname;
+  // "https://note.mu/<Username>/n/<Note ID>" or "https://<Domain>/n/<Note ID>"
   if (/^\/[\w\-]+\/n\/\w+$/.test(path) || /^\/n\/\w+$/.test(path))
     notemuChromeext.changeBackground();
 });
