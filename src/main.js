@@ -1,16 +1,17 @@
-const notemuChromeext = {
-  changeBackground() {
-    document
-      .querySelector('html[ng-app=noteApp] main:not([hidden])')
-      .classList.add('notemu-chromeext', 'enhanced-background');
-  }
+function changeBackground() {
+  document
+    .querySelector('html[ng-app=noteApp] main:not([hidden])')
+    .classList.add('notemu-chromeext', 'enhanced-background');
+}
+
+function isArticlePage() {
+  const path = location.pathname;
+  // "https://note.mu/<Username>/n/<Note ID>" or "https://<Domain>/n/<Note ID>"
+  return /^\/[\w\-]+\/n\/\w+$/.test(path) || /^\/n\/\w+$/.test(path);
 }
 
 document.body.addEventListener('transitionend', () => {
-  const path = location.pathname;
-  // "https://note.mu/<Username>/n/<Note ID>" or "https://<Domain>/n/<Note ID>"
-  if (/^\/[\w\-]+\/n\/\w+$/.test(path) || /^\/n\/\w+$/.test(path))
-    notemuChromeext.changeBackground();
+  if (isArticlePage()) changeBackground();
 });
 
-notemuChromeext.changeBackground();
+if (isArticlePage()) changeBackground();
