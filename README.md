@@ -22,21 +22,26 @@ note.mu の記事ページの背景を目に優しい色に変更する Chrome �
 
 ## Installation
 
-[Chrome ウェブストア](https://chrome.google.com/webstore/detail/background-color-enhancer/lmfhfgllepkjlgilfimmibkkphaafgnk)からインストールできます。
+You can install the extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/background-color-enhancer/lmfhfgllepkjlgilfimmibkkphaafgnk).
 
-## Reporting bugs and requesting enhancements
+## Contributing
 
-不具合報告または機能改善のリクエストは [issue](https://github.com/k-miyata/notemu-chromeextension/issues/new) からお願いいたします。
+If you encounter any bugs or have any questions, please [create a new issue](https://github.com/k-miyata/notemu-chromeextension/issues/new).
 
-## Development
+Also, I welcome pull requests to propose your ideas! Please refer to following development process:
 
 1. Clone this repository.
 2. Write code.
 3. Test your changes on Chrome. You can load `src` directory from the Extensions page in developer mode.
 4. Change `version` in `manifest.json`.
-5. Execute `build.sh` to make `package.zip` in `dist` directory.
-6. Upload the package to the Chrome Web Store.
+5. Send a pull request.
+
+If this changes are approved, @k-miyata, the repository owner, publish the update on the Chrome Web Store:
+
+6. Merge the pull request into `master`.
+7. Execute `build.sh` to make `package.zip` in `dist` directory.
+8. Upload the package to the Chrome Web Store.
 
 ## License
 
-The source code is released under the MIT license.
+This software is released under the MIT license.
