@@ -36,7 +36,7 @@ Also, I welcome pull requests to propose your ideas! Please refer to following d
 4. Change `version` in `manifest.json`.
 5. Send a pull request.
 
-If this changes are approved, @k-miyata, the repository owner, publish the update on the Chrome Web Store:
+If this changes are approved, @k-miyata, the repository owner, publishes the update on the Chrome Web Store:
 
 6. Merge the pull request into `master`.
 7. Execute `build.sh` to make `package.zip` in `dist` directory.
