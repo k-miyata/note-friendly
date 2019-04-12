@@ -1,6 +1,6 @@
 function changeBackground() {
   document
-    .querySelector('html[ng-app=noteApp] main:not([hidden])')
+    .querySelector('body.ns-note main:not([hidden])')
     .classList.add('notemu-chromeext', 'enhanced-background');
 }
 
