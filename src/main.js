@@ -7,7 +7,7 @@ function changeBackground() {
 function isArticlePage() {
   const path = location.pathname;
   // "https://note.mu/<Username>/n/<Note ID>" or "https://<Domain>/n/<Note ID>"
-  return /^\/[\w\-]+\/n\/\w+$/.test(path) || /^\/n\/\w+$/.test(path);
+  return /^\/[\w\-]+\/n\/n[a-z0-9]{12}$/.test(path) || /^\/n\/n[a-z0-9]{12}$/.test(path);
 }
 
 document.body.addEventListener('transitionend', () => {
