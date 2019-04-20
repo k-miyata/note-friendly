@@ -1,13 +1,13 @@
 function changeBackground() {
   document
-    .querySelector('body.ns-note main:not([hidden])')
+    .querySelector('main.p-article:not([hidden])')
     .classList.add('notemu-chromeext', 'enhanced-background');
 }
 
 function isArticlePage() {
   const path = location.pathname;
   // "https://note.mu/<Username>/n/<Note ID>" or "https://<Domain>/n/<Note ID>"
-  return /^\/[\w\-]+\/n\/\w+$/.test(path) || /^\/n\/\w+$/.test(path);
+  return /^\/[\w\-]+\/n\/n[a-z0-9]{12}$/.test(path) || /^\/n\/n[a-z0-9]{12}$/.test(path);
 }
 
 document.body.addEventListener('transitionend', () => {
