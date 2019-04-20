@@ -1,6 +1,6 @@
 function changeBackground() {
   document
-    .querySelector('body.ns-note main:not([hidden])')
+    .querySelector('main.p-article:not([hidden])')
     .classList.add('notemu-chromeext', 'enhanced-background');
 }
 
