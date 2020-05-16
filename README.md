@@ -1,32 +1,30 @@
-# Chrome Extension: Background Color Enhancer for note.mu
+![Title image](docs/readme.png)
 
-[<img src="https://user-images.githubusercontent.com/18201546/45263774-01d47000-b46b-11e8-9b8f-ecae55914b89.png" alt="Available in the Chrome Web Store" width="248">](https://chrome.google.com/webstore/detail/background-color-enhancer/lmfhfgllepkjlgilfimmibkkphaafgnk)
-
-This is the Chrome extension enhances the background color that is good for eyes on an article page of note.mu.
-
-note.mu の記事ページの背景を目に優しい色に変更する Chrome 拡張機能です。
-
-![Screenshot](img/screenshot-2560x1600.png)
+![Screenshot](docs/screenshot.png)
 
 ## Features
 
-### 目の負担を軽減
+This Chrome extension changes the backgroud color of an article page on [note](https://note.com) to a more eye-friendly.
 
-背景色を真っ白からグレーに変更することで、長時間記事を読んでも疲れにくくします。
+### Easy on the eyes
 
-### アクセシビリティに配慮
+背景色を真っ白からグレーに変更することで、長時間記事を読んでも目を疲れにくくします（科学的なテストを行ったわけではありませんのであらかじめご了承ください）。
+
+### Accessible
 
 背景色をグレーにするも最適なコントラスト比を維持することで、色覚に問題があっても読みやすさを損ねないようにしています。具体的には、[WCAG 2.1](https://www.w3.org/TR/WCAG21/#contrast-enhanced) で定められたレベル AAA の基準（コントラスト比 7.0 以上）をクリアしています。
 
-記事の文字色が `#444444` で変更後の背景色が `#EAEBEB` であるときのコントラスト比 8.15。2018 年 9 月 9 日に確認。
+記事の文字色が `#222222`、変更後の背景色が `#EAEBEB` であるため、コントラスト比は 13.3 となります（2020 年 5 月 16 日時点）。
 
 ## Installation
+
+[<img src="https://user-images.githubusercontent.com/18201546/45263774-01d47000-b46b-11e8-9b8f-ecae55914b89.png" alt="Available in the Chrome Web Store" width="248">](https://chrome.google.com/webstore/detail/background-color-enhancer/lmfhfgllepkjlgilfimmibkkphaafgnk)
 
 You can install the extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/background-color-enhancer/lmfhfgllepkjlgilfimmibkkphaafgnk).
 
 ## Contributing
 
-If you encounter any bugs or have any questions, please [create a new issue](https://github.com/k-miyata/notemu-chromeextension/issues/new).
+If you encounter any bugs or have any questions, please see the [issues](https://github.com/k-miyata/notemu-chromeextension/issues).
 
 Also, I welcome pull requests to propose your ideas! Please refer to following development process:
 
@@ -36,7 +34,7 @@ Also, I welcome pull requests to propose your ideas! Please refer to following d
 4. Change `version` in `manifest.json`.
 5. Send a pull request.
 
-If this changes are approved, @k-miyata, the repository owner, publishes the update on the Chrome Web Store:
+After this changes are approved, the repository owner will publish the update on the Chrome Web Store:
 
 6. Merge the pull request into `master`.
 7. Execute `build.sh` to make `package.zip` in `dist` directory.
@@ -44,4 +42,4 @@ If this changes are approved, @k-miyata, the repository owner, publishes the upd
 
 ## License
 
-This software is released under the MIT license.
+See [LICENSE](./LICENSE).
