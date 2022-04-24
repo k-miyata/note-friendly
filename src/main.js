@@ -18,13 +18,16 @@ function isArticlePageOnCustomDomain() {
  * Adds the class to `<html>` to apply the styles.
  */
 function applyStyles() {
-  document.documentElement.classList.add("chrome-extension-note-friendly");
+  if (isNoteDomain() || isArticlePageOnCustomDomain()) {
+    document.documentElement.classList.add("chrome-extension-note-friendly");
+  }
 }
 
 // This content script is injected after the DOM is complete, so you can access
 // the DOM without listening to the `DOMContentLoaded` event. See the
 // documentation for details on when content scripts are injected:
 // https://developer.chrome.com/docs/extensions/mv3/content_scripts/#run_time.
-if (isNoteDomain() || isArticlePageOnCustomDomain()) {
-  applyStyles();
-}
+applyStyles();
+
+// Applies the style when the user moves from an unscoped page to a scoped page.
+document.addEventListener("transitionend", applyStyles);
