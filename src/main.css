@@ -1,3 +1,5 @@
-.notemu-chromeext.enhanced-background {
-  background-color: hsl(180, 2%, 92%)
+:root.chrome-extension-note-friendly {
+  --color-mercuryGray: hsl(0deg 0% 86%);
+  --color-concreteGray: hsl(0deg 0% 90%);
+  --color-white: hsl(166deg 2% 92%);
 }
