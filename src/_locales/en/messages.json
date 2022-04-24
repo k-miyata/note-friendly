@@ -1,10 +1,10 @@
 {
-  "ext_name": {
-    "message": "Background Color Enhancer for note.mu",
-    "description": "The extension name."
+  "extension_name": {
+    "message": "Note Friendly",
+    "description": "The name of this extension."
   },
-  "ext_description": {
-    "message": "Enhances the background color that is good for eyes on an article page of note.mu.",
-    "description": "Description of the extention."
+  "extension_description": {
+    "message": "Changes the background of Note to the more eye-friendly colors.",
+    "description": "The description of this extention."
   }
 }
