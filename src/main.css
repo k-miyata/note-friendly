@@ -3,3 +3,25 @@
   --color-concreteGray: hsl(0deg 0% 90%);
   --color-white: hsl(166deg 2% 92%);
 }
+
+@media (prefers-color-scheme: dark) {
+  :root.chrome-extension-note-friendly {
+    --color-noteGreen: hsl(172deg 68% 50%);
+    --color-noteDarkenGreen: hsl(172deg 68% 74%);
+    --customPrimaryColor: hsl(172deg 68% 50%);
+    --customPrimaryDarkenColor: hsl(172deg 68% 74%);
+    --color-black: hsl(0deg 0% 98%);
+    --color-darkGray: hsl(150deg 10% 84%);
+    --color-lightGray: hsl(230deg 10% 72%);
+    --color-mercuryGray: hsl(0deg 0% 30%);
+    --color-concreteGray: hsl(0deg 0% 28%);
+    --color-waterBlue: hsl(190deg 8% 20%);
+    --color-white: hsl(166deg 1% 16%);
+    --color-likeRed: hsl(340deg 100% 68%);
+    --color-cautionOrange: hsl(38deg 100% 67%);
+  }
+
+  ::placeholder {
+    color: var(--color-lightGray) !important;
+  }
+}

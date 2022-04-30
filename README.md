@@ -1,6 +1,8 @@
 ![Title image](docs/readme.png)
 
-![Screenshot](docs/screenshot.png)
+![Screenshot of an article on Note compared before and after applying this extension. The background color is light gray after applying.](docs/screenshot.png)
+
+![Screenshot of an article on Note browsed in a dark color scheme. The background color is black and the text is white.](docs/screenshot-dark.png)
 
 ## Features
 
@@ -15,6 +17,13 @@ This Chrome extension changes the backgroud color of an article page on [note](h
 背景色をグレーにするも最適なコントラスト比を維持することで、色覚に問題があっても読みやすさを損ねないようにしています。具体的には、[WCAG 2.1](https://www.w3.org/TR/WCAG21/#contrast-enhanced) で定められたレベル AAA の基準（コントラスト比 7.0 以上）をクリアしています。
 
 記事の文字色が `#222222`、変更後の背景色が `#EAEBEB` であるため、コントラスト比は 13.3 となります（2020 年 5 月 16 日時点）。
+
+### Dark color schemes supported
+
+The gray background color is still too light for browsing in a dark color scheme
+(also called dark mode or dark theme). This extension darken the backgroud and
+also optimize other colors to the dark appearance when the OS appearance is set
+to a dark color scheme.
 
 ## Installation
 
