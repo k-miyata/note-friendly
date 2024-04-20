@@ -45,7 +45,7 @@ Also, I welcome pull requests to propose your ideas! Please refer to following d
 
 After this changes are approved, the repository owner will publish the update on the Chrome Web Store:
 
-6. Merge the pull request into `master`.
+6. Merge the pull request into `main`.
 7. Execute `build.sh` to make `package.zip` in `dist` directory.
 8. Upload the package to the Chrome Web Store.
 
