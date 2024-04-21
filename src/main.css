@@ -21,7 +21,7 @@
     --color-surface-successSubdued: hsl(172deg 6% 16%);
     --color-text-primary: hsl(0deg 0% 98%);
     --color-text-secondary: hsl(230deg 26% 92% / 0.66);
-    --color-text-clickable: hsl(230deg 26% 92% / 0.50);
+    --color-text-clickable-icon: hsl(230deg 26% 92% / 0.50);
     --color-text-success: hsl(172deg 68% 50%);
     --color-text-success-reaction: hsl(172deg 68% 74%);
     --color-text-caution: hsl(38deg 100% 67%);
