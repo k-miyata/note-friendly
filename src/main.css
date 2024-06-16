@@ -3,36 +3,34 @@
   --color-background-primary: hsl(166deg 2% 92%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root.chrome-extension-note-friendly {
-    --color-whiteAlpha-700: hsl(0deg 0% 0% / 0.82);
-    --color-blackAlpha-900: hsl(0deg 0% 100%);
-    --color-blackAlpha-600: hsl(0deg 0% 100% / 0.66);
-    --color-grayAlpha-600: hsl(230deg 26% 92% / 0.66);
-    --color-grayAlpha-300: hsl(230deg 26% 92% / 0.32);
-    --color-grayAlpha-200: hsl(230deg 26% 92% / 0.22);
-    --color-gray-900: hsl(230deg 26% 92%);
-    --color-note-accent: hsl(172deg 68% 50%);
-    --color-note-accent-reaction: hsl(172deg 68% 74%);
-    --color-custom-accent: hsl(172deg 68% 50%);
-    --color-custom-accent-reaction: hsl(172deg 68% 74%);
-    --color-surface-primary: hsl(172deg 68% 50%);
-    --color-surface-normal: hsl(172deg 1% 16%);
-    --color-surface-successSubdued: hsl(172deg 6% 16%);
-    --color-text-primary: hsl(0deg 0% 98%);
-    --color-text-secondary: hsl(230deg 26% 92% / 0.66);
-    --color-text-clickable-icon: hsl(230deg 26% 92% / 0.50);
-    --color-text-success: hsl(172deg 68% 50%);
-    --color-text-success-reaction: hsl(172deg 68% 74%);
-    --color-text-caution: hsl(38deg 100% 67%);
-    --color-text-like: hsl(340deg 100% 68%);
-    --color-text-invert: hsl(0deg 0% 0%);
-    --color-text-placeholder: hsl(230deg 10% 72%);
-    --color-border-default: hsl(230deg 26% 92% / 0.14);
-    --color-border-weak: hsl(230deg 26% 92% / 0.03);
-    --color-border-strong: hsl(230deg 26% 92% / 0.22);
-    --color-background-primary: hsl(172deg 1% 16%);
-    --color-background-default: hsl(172deg 1% 16%);
-    --color-background-secondary: hsl(172deg 1% 20%);
-  }
+:root.chrome-extension-note-friendly[data-chrome-extension-note-friendly-color-scheme=dark] {
+  --color-whiteAlpha-700: hsl(0deg 0% 0% / 0.82);
+  --color-blackAlpha-900: hsl(0deg 0% 100%);
+  --color-blackAlpha-600: hsl(0deg 0% 100% / 0.66);
+  --color-grayAlpha-600: hsl(230deg 26% 92% / 0.66);
+  --color-grayAlpha-300: hsl(230deg 26% 92% / 0.32);
+  --color-grayAlpha-200: hsl(230deg 26% 92% / 0.22);
+  --color-gray-900: hsl(230deg 26% 92%);
+  --color-note-accent: hsl(172deg 68% 50%);
+  --color-note-accent-reaction: hsl(172deg 68% 74%);
+  --color-custom-accent: hsl(172deg 68% 50%);
+  --color-custom-accent-reaction: hsl(172deg 68% 74%);
+  --color-surface-primary: hsl(172deg 68% 50%);
+  --color-surface-normal: hsl(172deg 1% 16%);
+  --color-surface-successSubdued: hsl(172deg 6% 16%);
+  --color-text-primary: hsl(0deg 0% 98%);
+  --color-text-secondary: hsl(230deg 26% 92% / 0.66);
+  --color-text-clickable-icon: hsl(230deg 26% 92% / 0.50);
+  --color-text-success: hsl(172deg 68% 50%);
+  --color-text-success-reaction: hsl(172deg 68% 74%);
+  --color-text-caution: hsl(38deg 100% 67%);
+  --color-text-like: hsl(340deg 100% 68%);
+  --color-text-invert: hsl(0deg 0% 0%);
+  --color-text-placeholder: hsl(230deg 10% 72%);
+  --color-border-default: hsl(230deg 26% 92% / 0.14);
+  --color-border-weak: hsl(230deg 26% 92% / 0.03);
+  --color-border-strong: hsl(230deg 26% 92% / 0.22);
+  --color-background-primary: hsl(172deg 1% 16%);
+  --color-background-default: hsl(172deg 1% 16%);
+  --color-background-secondary: hsl(172deg 1% 20%);
 }

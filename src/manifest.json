@@ -7,6 +7,12 @@
     "128": "icon_128.png"
   },
   "default_locale": "en",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
   "content_scripts": [
     {
       "matches": [

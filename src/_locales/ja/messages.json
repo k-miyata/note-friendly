@@ -6,5 +6,21 @@
   "extension_description": {
     "message": "noteの背景を目に優しい色に変更します。",
     "description": "この拡張機能の説明。"
+  },
+  "color_scheme_preference_caption": {
+    "message": "配色",
+    "description": "カラースキームを変更する設定のキャプション。"
+  },
+  "color_scheme_preference_auto_option_label": {
+    "message": "自動",
+    "description": "カラースキームをシステム設定に合わせるオプションのラベル。"
+  },
+  "color_scheme_preference_light_option_label": {
+    "message": "ライト",
+    "description": "カラースキームをライトモードにするオプションのラベル。"
+  },
+  "color_scheme_preference_dark_option_label": {
+    "message": "ダーク",
+    "description": "カラースキームをダークモードにするオプションのラベル。"
   }
 }
