@@ -4,25 +4,26 @@
     <meta charset="utf-8">
     <title data-locale="extension_name">Note Friendly</title>
     <script defer src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css">
   </head>
   <body>
     <fieldset>
       <legend data-locale="color_scheme_preference_caption">Color Scheme</legend>
       <div>
-        <label>
-          <input type="radio" name="colorScheme" value="auto" checked>
+        <label class="label">
+          <input class="radio" type="radio" name="colorScheme" value="auto" checked>
           <span data-locale="color_scheme_preference_auto_option_label">Auto</span>
         </label>
       </div>
       <div>
-        <label>
-          <input type="radio" name="colorScheme" value="light">
+        <label class="label">
+          <input class="radio" type="radio" name="colorScheme" value="light">
           <span data-locale="color_scheme_preference_light_option_label">Light</span>
         </label>
       </div>
       <div>
-        <label>
-          <input type="radio" name="colorScheme" value="dark">
+        <label class="label">
+          <input class="radio" type="radio" name="colorScheme" value="dark">
           <span data-locale="color_scheme_preference_dark_option_label">Dark</span>
         </label>
       </div>

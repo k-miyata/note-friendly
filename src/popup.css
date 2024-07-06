@@ -1,0 +1,18 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  width: 8rem;
+}
+
+.label {
+  display: inline-flex;
+  padding: 0.25em;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.radio {
+  margin: 0;
+}
