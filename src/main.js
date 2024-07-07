@@ -15,13 +15,61 @@ function isArticlePageOnCustomDomain() {
 }
 
 /**
+ * Returns whether the extension should apply the styles.
+ */
+function shouldApplyStyles() {
+  return isNoteDomain() || isArticlePageOnCustomDomain();
+}
+
+const prefersDarkMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+/**
+ * Sets the data attribute to `<html>` to apply the color scheme.
+ */
+function applyColorScheme(value) {
+  if (shouldApplyStyles()) {
+    let colorScheme = value;
+    if (value === "auto") {
+      if (prefersDarkMediaQuery.matches) {
+        colorScheme = "dark";
+      } else {
+        colorScheme = "light";
+      }
+    }
+    document.documentElement.dataset.chromeExtensionNoteFriendlyColorScheme = colorScheme;
+  }
+}
+
+/**
+ * Applies the color scheme the user choices in the popup.
+ */
+async function applyCurrentColorScheme() {
+  const results = await chrome.storage.local.get("colorScheme");
+  const { colorScheme } = results;
+  if (colorScheme) {
+    applyColorScheme(colorScheme);
+  }
+}
+
+/**
  * Adds the class to `<html>` to apply the styles.
  */
 function applyStyles() {
-  if (isNoteDomain() || isArticlePageOnCustomDomain()) {
+  if (shouldApplyStyles()) {
     document.documentElement.classList.add("chrome-extension-note-friendly");
   }
 }
+
+applyCurrentColorScheme();
+
+chrome.storage.onChanged.addListener((changes) => {
+  const { colorScheme } = changes;
+  if (colorScheme) {
+    applyColorScheme(colorScheme.newValue);
+  }
+});
+
+prefersDarkMediaQuery.addEventListener("change", applyCurrentColorScheme);
 
 // This content script is injected after the DOM is complete, so you can access
 // the DOM without listening to the `DOMContentLoaded` event. See the

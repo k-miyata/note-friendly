@@ -6,5 +6,21 @@
   "extension_description": {
     "message": "Changes the background of Note to the more eye-friendly colors.",
     "description": "The description of this extention."
+  },
+  "color_scheme_preference_caption": {
+    "message": "Color Scheme",
+    "description": "The caption for the preference that changes the color scheme."
+  },
+  "color_scheme_preference_auto_option_label": {
+    "message": "Auto",
+    "description": "The label for the option that changes the color scheme based on the system preferences."
+  },
+  "color_scheme_preference_light_option_label": {
+    "message": "Light",
+    "description": "The label for the option that changes the color scheme to light."
+  },
+  "color_scheme_preference_dark_option_label": {
+    "message": "Dark",
+    "description": "The label for the option that changes the color scheme to dark."
   }
 }
